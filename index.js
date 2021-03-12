@@ -231,7 +231,7 @@
 
   exports.int = function (n) {
     if (("" + n).trim() === '') {
-      return 0;
+      return null;
     } else {
       return parseInt(n, 10);
     }
@@ -243,7 +243,7 @@
 
   exports.float = function (n) {
     if (("" + n).trim() === '') {
-      return 0.0;
+      return null;
     } else {
       return parseFloat(n);
     }
